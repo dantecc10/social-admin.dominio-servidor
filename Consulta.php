@@ -101,7 +101,7 @@
             echo "<th>Sistema Operativo</th>";
             echo "<th>Marca</th>";
             echo "<th>Modelo</th>";
-            echo "<th>ECOSYS 314</th>";
+            echo "<th>ECOSYS 3145</th>";
             echo "<th>TASKalfa</th>";
             echo "<th>M5521</th>";
             echo "</tr>";
@@ -121,7 +121,7 @@
                 echo "<td>" . $columna['Sistema Operativo'] . "</td>";
                 echo "<td>" . $columna['Marca'] . "</td>";
                 echo "<td>" . $columna['Modelo'] . "</td>";
-                echo "<td>" . $columna['ECOSYS 314'] . "</td>";
+                echo "<td>" . $columna['ECOSYS 3145'] . "</td>";
                 echo "<td>" . $columna['TASKalfa'] . "</td>";
                 echo "<td>" . $columna['M5521'] . "</td>";
                 echo "</tr>";
