@@ -34,7 +34,7 @@
         <?php
         require("Conexión.php");
         $consulta = "SELECT * FROM `equipos administrativos`";
-        $resultado = mysqli_query($conexión, $consulta) or die("Error en la consulta a la base de datos");
+        $resultado = mysqli_query($conn, $consulta) or die("Error en la consulta a la base de datos");
         echo "<tr>";
         echo "<th>ID</th>";
         echo "<th>Usuario</th>";
