@@ -40,7 +40,7 @@
         <table id="TablaFiltros">
             <tr id="EncabezadosFiltros">
                 <th>ID</th>
-                <th>Marca</th>
+                <th>Nombre</th>
                 <th>Línea o serie</th>
                 <th>Modelo</th>
                 <th>Barras</th>
@@ -52,10 +52,7 @@
                         <input type="number" name="CapturaID" id="CampoFiltroID" placeholder="ID" onblur="javascript:FiltroID(ModoFiltro = 'ID')" onchange="javascript:FiltroID(ModoFiltro = 'ID')">
                     </td>
                     <td>
-                        <select name="CapturaNombre" id="CampoFiltroNombre" onblur="javascript:FiltroMarca(ModoFiltro = 'ID')" onchange="javascript:FiltroMarca(ModoFiltro = 'ID')">
-                            <option value="Todas">Todas</option>
-                            <option value="Playmobil">Playmobil</option>
-                            <option value="LEGO">LEGO</option>
+                        <select name="CapturaNombre" id="CampoFiltroNombre" onblur="javascript:FiltroNombre(ModoFiltro = 'ID')" onchange="javascript:FiltroNombre(ModoFiltro = 'ID')">
                             <?php
                             $consulta = "SELECT Nombre FROM `equipos administrativos`";
                             $resultado = mysqli_query($conexión, $consulta) or die("Error en la consulta a la base de datos");
