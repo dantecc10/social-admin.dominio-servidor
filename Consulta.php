@@ -21,7 +21,7 @@
                 </a>
                 <div class="Menú-Desplegable"> <button class="Botón-Desplegar">Menú</button>
                     <div class="Contenido-Desplegable">
-                        <a href="Consulta.php">Consultar productosf</a>
+                        <a href="Consulta.php">Consultar productos</a>
                         <a id="CambiaTema" onclick="javascript:CambiarTema();">Cambiar tema</a>
                     </div>
                 </div>
