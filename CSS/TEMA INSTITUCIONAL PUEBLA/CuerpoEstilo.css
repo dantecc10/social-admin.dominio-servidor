@@ -2,6 +2,95 @@
 
 /*Punto de ruptura para pantallas grandes (equipos de escritorio)*/
     {
+
+    table.Catálogo,
+    table.Catálogo th,
+    table.Catálogo td,
+    table.Catálogo tr {
+        text-align: center;
+        border: 1px solid;
+        border-collapse: collapse;
+    }
+
+    table.Catálogo th {
+        padding: 5px;
+    }
+
+    #InputID {
+        width: 50px;
+        text-align: center;
+    }
+
+    #InputArtículo {
+        width: 200px;
+        text-align: center;
+    }
+
+    #InputMarca {
+        width: 75px;
+        text-align: center;
+    }
+
+    #InputCantidad {
+        width: 50px;
+        text-align: center;
+    }
+
+    #InputPrecioL {
+        width: 50px;
+        text-align: center;
+    }
+
+    #InputPrecioML {
+        width: 50px;
+        text-align: center;
+    }
+
+    #InputPrecioMS {
+        width: 50px;
+        text-align: center;
+    }
+
+    #InputLíneaSerie {
+        width: 50px;
+        text-align: center;
+    }
+
+    #InputModelo {
+        width: 80px;
+        text-align: center;
+    }
+
+    #InputDescripción {
+        width: 50px;
+        text-align: center;
+    }
+
+    #InputBarras {
+        width: 150px;
+        text-align: center;
+    }
+
+    #InputSKU {
+        width: 150px;
+        text-align: center;
+    }
+
+    .CeldaParaID,
+    .CeldaParaArtículo,
+    .CeldaParaMarca,
+    .CeldaParaCantidad,
+    .CeldaParaPrecioL,
+    .CeldaParaPrecioML,
+    .CeldaParaPrecioMS,
+    .CeldaParaLíneaSerie,
+    .CeldaParaModelo,
+    .CeldaParaDescripción,
+    .CeldaParaBarras,
+    .CeldaParaSKU {
+        padding: 2px;
+    }
+
     #copyright {
         text-align: center;
         color: whitesmoke;
