@@ -36,6 +36,51 @@
             require("Conexión.php");
             ?>
         </p>
+        <p>Filtros:</p>
+        <table id="TablaFiltros">
+            <tr id="EncabezadosFiltros">
+                <th>ID</th>
+                <th>Marca</th>
+                <th>Línea o serie</th>
+                <th>Modelo</th>
+                <th>Barras</th>
+                <th>SKU</th>
+            </tr>
+            <form>
+                <tr id="InputsFiltros">
+                    <td id="BúsquedaID">
+                        <input type="number" name="CapturaID" id="CampoFiltroID" placeholder="ID" onblur="javascript:FiltroID(ModoFiltro = 'ID')" onchange="javascript:FiltroID(ModoFiltro = 'ID')">
+                    </td>
+                    <td>
+                        <select name="CapturaMarca" id="CampoFiltroMarca" onblur="javascript:FiltroMarca(ModoFiltro = 'ID')" onchange="javascript:FiltroMarca(ModoFiltro = 'ID')">
+                            <option value="Todas">Todas</option>
+                            <option value="Playmobil">Playmobil</option>
+                            <option value="LEGO">LEGO</option>
+                        </select>
+                    </td>
+                    <td id="BúsquedaLíneaSerie">
+                        <input type="text" name="CapturaLíneaSerie" id="CampoFiltroLíneaSerie" placeholder="Línea o serie" onblur="javascript:FiltroLíneaSerie(ModoFiltro = 'LíneaSerie')" onchange="javascript:FiltroLíneaSerie(ModoFiltro = 'LíneaSerie')">
+                    </td>
+                    <td id="BúsquedaModelo">
+                        <input type="text" name="CapturaModelo" id="CampoFiltroModelo" placeholder="Modelo del artículo" onblur="javascript:FiltroModelo(ModoFiltro = 'Modelo')" onchange="javascript:FiltroModelo(ModoFiltro = 'Modelo')">
+                    </td>
+                    <td id="BúsquedaBarras">
+                        <input type="text" name="CapturaBarras" id="CampoFiltroBarras" placeholder="Código de barras" onblur="javascript:FiltroBarras(ModoFiltro = 'Barras')" onchange="javascript:FiltroBarras(ModoFiltro = 'Barras')">
+                    </td>
+                    <td id="BúsquedaSKU">
+                        <input type="text" name="CapturaSKU" id="CampoFiltroSKU" placeholder="SKU" onblur="javascript:FiltroSKU(ModoFiltro = 'SKU')" onchange="javascript:FiltroSKU(ModoFiltro = 'SKU')">
+                    </td>
+                </tr>
+        </table>
+        <!--
+        <input class='BotónEstándar' type='submit' value="Filtrar productos" onclick="javascript:FiltrarProductos();">
+    -->
+        </form>
+
+        <button class="BotónEstándar" onclick="javascript:LimpiarFiltros();">Limpiar filtros</button>
+        <br>
+        <div id="DivTablaID"></div>
+        <hr>
 
         <table id="InsertarResultados">
             <?php
