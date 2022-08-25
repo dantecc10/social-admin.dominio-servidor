@@ -54,7 +54,7 @@
                     <td>
                         <select name="CapturaNombre" id="CampoFiltroNombre" onblur="javascript:FiltroNombre(ModoFiltro = 'ID')" onchange="javascript:FiltroNombre(ModoFiltro = 'ID')">
                             <?php
-                            $consulta = "SELECT Nombre FROM `equipos administrativos`";
+                            $consulta = "SELECT `Nombre` FROM `equipos administrativos`";
                             $resultado = mysqli_query($conexión, $consulta) or die("Error en la consulta a la base de datos");
                             while ($columna = mysqli_fetch_array($resultado)) {
                                 echo ("<option value='" . $columna['Nombre'] . ">" . $columna['Nombre'] . "</option>");
