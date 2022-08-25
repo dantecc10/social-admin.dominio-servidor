@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Servicio social - Administración</title>
 </head>
 
 <body>
@@ -17,12 +17,12 @@
     <header id="Encabezado">
         <div id="Contenedor-Encabezado">
             <div id="Contenido-Encabezado">
-                <h1>Politiza MX</h1> <a href="../index.php"> <img id="Logo" src="../IMG/FAVICON.PNG" alt="Logo POLITIZA MX">
+                <h1>Servicio social</h1> <a href="index.php"> <img id="Logo" src="../IMG/FAVICON.PNG" alt="Logo POLITIZA MX">
                 </a>
                 <div class="Menú-Desplegable"> <button class="Botón-Desplegar">Menú</button>
-                    <div class="Contenido-Desplegable"> <a href="SignificadoPolítica.php">¿Qué es la política?</a> <a href="ConceptosPolítica.php">Conceptos políticos</a> <a href="Opinión.php">Artículos de
-                            opinión</a> <a href="Poderes.php">División de poderes</a> <a href="Partidos.php">Partidos
-                            políticos</a> <a href="Presidenciables.php">Presidenciables 2024</a><!--  <a href="AcercaDe.php">Acerca de...</a>  !--><a id="CambiaTema" onclick="javascript:CambiarTema();">Cambiar tema</a>
+                    <div class="Contenido-Desplegable">
+                        <a href="Consulta.php">Consultar productosf</a>
+                        <a id="CambiaTema" onclick="javascript:CambiarTema();">Cambiar tema</a>
                     </div>
                 </div>
             </div>
