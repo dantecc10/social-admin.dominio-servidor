@@ -1,4 +1,4 @@
-@media only screen and (min-width: 1200px)
+@media only screen and (min-width: 1025px)
 
 /*Punto de ruptura para pantallas grandes (equipos de escritorio)*/
     {
@@ -245,6 +245,13 @@
 
     }
 
+    #TablaFiltros td,
+    #InsertarResultados td {
+        background-color: #041029;
+        /*PROBLEMA TABLA CSS*/
+        color: whitesmoke;
+    }
+
     table#InsertarResultados,
     table#TablaFiltros {
         width: 100%;
@@ -267,11 +274,6 @@
         font-size: 13px;
     }
 
-    #TablaFiltros td,
-    #InsertarResultados td {
-        background-color: #041029;
-        color: whitesmoke;
-    }
 
     tr {
         font-size: 13px;
