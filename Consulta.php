@@ -179,6 +179,7 @@
                 echo "<td>" . $columna['Estado'] . "</td>";
                 echo "</tr>";
             }
+            mysqli_close($conexión)
             ?>
         </table>
     </div>
