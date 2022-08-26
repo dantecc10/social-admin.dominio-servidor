@@ -103,13 +103,9 @@
                     </td>
                     <td id="BúsquedaMarca">
                         <select name="CapturaMarca" id="CampoFiltroMarca" onblur="javascript:FiltroMarca(ModoFiltro = 'ID')" onchange="javascript:FiltroMarca(ModoFiltro = 'ID')">
-                            <?php
-                            $consulta = "SELECT `Marca` FROM `equipos administrativos`";
-                            $resultado = mysqli_query($conexión, $consulta) or die("Error en la consulta a la base de datos");
-                            while ($columna = mysqli_fetch_array($resultado)) {
-                                echo ("<option value='" . $columna['Marca'] . "'>" . $columna['Marca'] . "</option>");
-                            }
-                            ?>
+                            <option value="DELL">DELL</option>
+                            <option value="HP">HP</option>
+                            <option value="Acer">Acer</option>
                         </select>
                     </td>
                     <td id="BúsquedaModelo">
