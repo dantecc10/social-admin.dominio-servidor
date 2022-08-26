@@ -15,9 +15,9 @@ ConstruirTabla($sql);
 
 function ConstruirTabla($sql)
 {
-    require("Conexión.php");
+    require('Conexión.php');
     echo $sql;
-    $result = mysqli_query($con, $sql) or die("Error en la consulta a la base de datos");
+    $result = mysqli_query($conexión, $sql) or die("Error en la consulta a la base de datos");
     echo "<tr>";
     echo "<th>ID</th>";
     echo "<th>Usuario</th>";
@@ -61,5 +61,5 @@ function ConstruirTabla($sql)
         echo "</tr>";
     }
     echo "</table>";
-    mysqli_close($con);
+    mysqli_close($conexión);
 };
