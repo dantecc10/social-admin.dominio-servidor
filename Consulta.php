@@ -64,41 +64,41 @@
                     </td>
                     <td id="BúsquedaPuesto">
                         <select name="CapturaPuesto" id="CampoFiltroPuesto" onblur="javascript:FiltroPuesto(ModoFiltro = 'ID')" onchange="javascript:FiltroPuesto(ModoFiltro = 'ID')">
-                            <option value="">Administrativo Especializado</option>
-                            <option value="">Apoyo Vinculación</option>
-                            <option value="">Vinculador</option>
-                            <option value="">Encargada de Biblioteca</option>
-                            <option value="">Encargada de Centro Emprendedor</option>
-                            <option value="">Encargada COSIG</option>
-                            <option value="">Recursos</option>
-                            <option value="">Apoyo al Aprendizaje</option>
-                            <option value="">Coordinadora Académica</option>
-                            <option value="">Auxiliar Coordinadora Académica</option>
-                            <option value="">Encargado de Orden</option>
-                            <option value="">Auxiliar de Extensión Educativa</option>
-                            <option value="">Orientadora</option>
-                            <option value="">Laboratorista LUM</option>
-                            <option value="">Docente</option>
-                            <option value="">Encargada Taller SERH</option>
-                            <option value="">Enfermera</option>
-                            <option value="">Director</option>
-                            <option value="">Secretaria del Director</option>
-                            <option value="">Programador</option>
-                            <option value="">Encargada del Archivo</option>
-                            <option value="">Jefa Oficina de Infraestructura</option>
-                            <option value="">Encargada USAER</option>
-                            <option value="">Equipo de consulta / impresión</option>
+                            <option value="Administrativo Especializado">Administrativo Especializado</option>
+                            <option value="Apoyo Vinculación">Apoyo Vinculación</option>
+                            <option value="Vinculador">Vinculador</option>
+                            <option value="Encargada de Biblioteca">Encargada de Biblioteca</option>
+                            <option value="Encargada de Centro Emprendedor">Encargada de Centro Emprendedor</option>
+                            <option value="Encargada COSIG">Encargada COSIG</option>
+                            <option value="Recursos">Recursos</option>
+                            <option value="Apoyo al Aprendizaje">Apoyo al Aprendizaje</option>
+                            <option value="Coordinadora Académica">Coordinadora Académica</option>
+                            <option value="Auxiliar Coordinadora Académica">Auxiliar Coordinadora Académica</option>
+                            <option value="Encargado de Orden">Encargado de Orden</option>
+                            <option value="Auxiliar de Extensión Educativa">Auxiliar de Extensión Educativa</option>
+                            <option value="Orientadora">Orientadora</option>
+                            <option value="Laboratorista LUM">Laboratorista LUM</option>
+                            <option value="Docente">Docente</option>
+                            <option value="Encargada Taller SERH">Encargada Taller SERH</option>
+                            <option value="Enfermera">Enfermera</option>
+                            <option value="Director">Director</option>
+                            <option value="Secretaria del Director">Secretaria del Director</option>
+                            <option value="Programador">Programador</option>
+                            <option value="Encargada del Archivo">Encargada del Archivo</option>
+                            <option value="Jefa Oficina de Infraestructura">Jefa Oficina de Infraestructura</option>
+                            <option value="Encargada USAER">Encargada USAER</option>
+                            <option value="Equipo de consulta / impresión">Equipo de consulta / impresión</option>
                         </select>
                     </td>
                     <td id="BúsquedaDependencia">
                         <select name="CapturaDependencia" id="CampoFiltroDependencia" onblur="javascript:FiltroDependencia(ModoFiltro = 'ID')" onchange="javascript:FiltroDependencia(ModoFiltro = 'ID')">
-                            <?php
-                            $consulta = "SELECT `Dependencia` FROM `equipos administrativos`";
-                            $resultado = mysqli_query($conexión, $consulta) or die("Error en la consulta a la base de datos");
-                            while ($columna = mysqli_fetch_array($resultado)) {
-                                echo ("<option value='" . $columna['Dependencia'] . "'>" . $columna['Dependencia'] . "</option>");
-                            }
-                            ?>
+                            <option value="Vinculación">Vinculación</option>
+                            <option value="Coordinación de Extensión Educativa">Coordinación de Extensión Educativa</option>
+                            <option value="Coordinación Académica">Coordinación Académica</option>
+                            <option value="Orientación Educativa">Orientación Educativa</option>
+                            <option value="Sala de maestros">Sala de maestros</option>
+                            <option value="Academia Sociales Humanidades Comunicación">Academia Sociales Humanidades Comunicación</option>
+                            <option value="Dirección">Dirección</option>
                         </select>
                     </td>
                     <td id="BúsquedaMarca">
