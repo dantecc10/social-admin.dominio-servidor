@@ -64,13 +64,30 @@
                     </td>
                     <td id="BúsquedaPuesto">
                         <select name="CapturaPuesto" id="CampoFiltroPuesto" onblur="javascript:FiltroPuesto(ModoFiltro = 'ID')" onchange="javascript:FiltroPuesto(ModoFiltro = 'ID')">
-                            <?php
-                            $consulta = "SELECT `Puesto` FROM `equipos administrativos`";
-                            $resultado = mysqli_query($conexión, $consulta) or die("Error en la consulta a la base de datos");
-                            while ($columna = mysqli_fetch_array($resultado)) {
-                                echo ("<option value='" . $columna['Puesto'] . "'>" . $columna['Puesto'] . "</option>");
-                            }
-                            ?>
+                            <option value="">Administrativo Especializado</option>
+                            <option value="">Apoyo Vinculación</option>
+                            <option value="">Vinculador</option>
+                            <option value="">Encargada de Biblioteca</option>
+                            <option value="">Encargada de Centro Emprendedor</option>
+                            <option value="">Encargada COSIG</option>
+                            <option value="">Recursos</option>
+                            <option value="">Apoyo al Aprendizaje</option>
+                            <option value="">Coordinadora Académica</option>
+                            <option value="">Auxiliar Coordinadora Académica</option>
+                            <option value="">Encargado de Orden</option>
+                            <option value="">Auxiliar de Extensión Educativa</option>
+                            <option value="">Orientadora</option>
+                            <option value="">Laboratorista LUM</option>
+                            <option value="">Docente</option>
+                            <option value="">Encargada Taller SERH</option>
+                            <option value="">Enfermera</option>
+                            <option value="">Director</option>
+                            <option value="">Secretaria del Director</option>
+                            <option value="">Programador</option>
+                            <option value="">Encargada del Archivo</option>
+                            <option value="">Jefa Oficina de Infraestructura</option>
+                            <option value="">Encargada USAER</option>
+                            <option value="">Equipo de consulta / impresión</option>
                         </select>
                     </td>
                     <td id="BúsquedaDependencia">
