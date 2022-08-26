@@ -7,7 +7,7 @@ $sql;
   Declaración de funciones -------------------------------------------------------------------------------------------------------------------------------------------
   */
 
-echo ("ID es: " . $ID . "<br>");
+// echo ("ID es: " . $ID . "<br>");
 $SQLBase = "SELECT * FROM `equipos administrativos` WHERE ";
 $SQLBase = ($SQLBase . " ID = " . $ID);
 $sql = $SQLBase;
@@ -16,7 +16,7 @@ ConstruirTabla($sql);
 function ConstruirTabla($sql)
 {
     require('Conexión.php');
-    echo $sql;
+    // echo $sql;
     echo ("<table id='InsertarResultados'>");
     $result = mysqli_query($conexión, $sql) or die("Error en la consulta a la base de datos");
     echo "<tr>";
