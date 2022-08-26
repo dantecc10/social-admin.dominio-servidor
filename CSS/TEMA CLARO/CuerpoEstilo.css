@@ -7,8 +7,9 @@
         color: #2e6583;
         text-decoration: dotted;
     }
-    a.Básica{
-        color:#60dbf1;
+
+    a.Básica {
+        color: #60dbf1;
     }
 
 
@@ -174,14 +175,14 @@
 
     #TablaFiltros td,
     #InsertarResultados td {
-        background-color: #004483;
+        background-color: #fffeee;
         color: whitesmoke;
     }
 
     #InsertarResultados th,
     #TablaFiltros th {
-        background-color: #0289c0;
-        color: #011c4b;
+        background-color: #e7e7e7;
+        color: #3b3b3b;
     }
 
     .EncabezadoCasilla {
@@ -379,7 +380,7 @@
         height: 100px;
         border-radius: 25px;
         margin-right: 15px;
-        margin-bottom: 15px;     
+        margin-bottom: 15px;
     }
 
     img.LogoPartidista#LogoPRI {
