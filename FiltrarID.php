@@ -8,7 +8,7 @@ $sql;
   */
 
 echo ("ID es: " . $ID . "<br>");
-$SQLBase = "SELECT * FROM equipos_administrativos WHERE ";
+$SQLBase = "SELECT * FROM equipos administrativos WHERE ";
 $SQLBase = ($SQLBase . " ID = " . $ID);
 $sql = $SQLBase;
 ConstruirTabla($sql);
