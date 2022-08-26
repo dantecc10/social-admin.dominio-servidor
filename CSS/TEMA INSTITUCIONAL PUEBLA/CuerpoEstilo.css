@@ -270,6 +270,7 @@
     #InsertarResultados th,
     #TablaFiltros th {
         background-color: #0c38e8;
+        font-size: 18px;
     }
 
     .EncabezadoCasilla {
