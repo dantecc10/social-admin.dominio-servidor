@@ -15,10 +15,7 @@ ConstruirTabla($sql);
 
 function ConstruirTabla($sql)
 {
-    $con = mysqli_connect('localhost', 'dantecc10', '@dantecc10!', 'lista_equipos');
-    if (!$con) {
-        die('Could not connect: ' . mysqli_connect_error($con));
-    }
+    require("Conexión.php");
     echo $sql;
     $result = mysqli_query($con, $sql) or die("Error en la consulta a la base de datos");
     echo "<tr>";
