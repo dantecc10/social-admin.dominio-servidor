@@ -8,8 +8,8 @@
 
     h1 {
         border-radius: 20px;
-        background-color: #1622448d;
-        color: #07b89e;
+        background-color: #eaeaed;
+        color: #c62038;
         font-family: Georgia, 'Times New Roman', Times, serif;
         font-size: 40px;
         text-align: center;
@@ -22,7 +22,6 @@
         text-align: center;
         margin-right: 52px;
         margin-left: -140px;
-        alt: "Por Dante Castelán Carpinteyro";
     }
 
     #Encabezado {
