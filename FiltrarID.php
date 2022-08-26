@@ -9,7 +9,7 @@ $sql;
 
 echo ("ID es: " . $ID . "<br>");
 $SQLBase = "SELECT * FROM `equipos_administrativos` WHERE ";
-$SQLBase = ($SQLBase . " `ID` = '" . $ID . "'");
+$SQLBase = ($SQLBase . " `ID` = " . $ID);
 $sql = $SQLBase;
 ConstruirTabla($sql);
 
