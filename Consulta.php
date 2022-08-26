@@ -88,7 +88,7 @@
                             <option value="Programador">Programador</option>
                             <option value="Encargada del Archivo">Encargada del Archivo</option>
                             <option value="Jefa Oficina de Infraestructura">Jefa Oficina de Infraestructura</option>
-                            <option value="Encargada USAER">Encargada USAER</option>
+                            <option value="Encargada USAER">Maestra USAER</option>
                             <option value="Equipo de consulta / impresión">Equipo de consulta / impresión</option>
                         </select>
                     </td>
