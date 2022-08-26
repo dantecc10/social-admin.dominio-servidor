@@ -261,6 +261,12 @@
         border-radius: 5px;
     }
 
+    #InsertarResultados th,
+    #TablaFiltros th {
+        background-color: #0c38e8;
+        font-size: 15px;
+    }
+
     #TablaFiltros td,
     #InsertarResultados td {
         background-color: #041029;
@@ -272,11 +278,6 @@
         height: 30px;
     }
 
-    #InsertarResultados th,
-    #TablaFiltros th {
-        background-color: #0c38e8;
-        font-size: 15px;
-    }
 
     .EncabezadoCasilla {
         width: 15%;
