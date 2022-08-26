@@ -264,7 +264,7 @@
     #InsertarResultados th,
     #TablaFiltros th {
         background-color: #0c38e8;
-        font-size: 15px;
+        font-size: 13px;
     }
 
     #TablaFiltros td,
@@ -274,7 +274,7 @@
     }
 
     tr {
-        font-size: 15px;
+        font-size: 13px;
         height: 30px;
     }
 
