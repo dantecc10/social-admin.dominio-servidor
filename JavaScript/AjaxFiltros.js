@@ -52,12 +52,12 @@ function FiltroID() {
     }
 }
 
-function FiltroMarca() {
-    var Marca = document.getElementById("CampoFiltroMarca").value;
-    if (Marca != "" || Marca != null || Marca != "Todas") {
+function FiltroNombre() {
+    var Nombre = document.getElementById("CampoFiltroNombre").value;
+    if (Nombre != "" || Nombre != null || Nombre != "Todas") {
         var urlCompuesta, urlVariables = "", uriPHP;
-        uriPHP = "FiltrarMarca.php";
-        urlVariables = ("?Marca=" + Marca);
+        uriPHP = "FiltrarNombre.php";
+        urlVariables = ("?Nombre=" + Nombre);
         urlCompuesta = (uriPHP + urlVariables);
 
         var xmlhttp = new XMLHttpRequest();
@@ -76,12 +76,60 @@ function FiltroMarca() {
         return;
     }
 }
-function FiltroLíneaSerie() {
-    var LíneaSerie = document.getElementById("CampoFiltroLíneaSerie").value;
-    if (LíneaSerie != "" || LíneaSerie != null) {
+function FiltroPuesto() {
+    var Puesto = document.getElementById("CampoFiltroPuesto").value;
+    if (Puesto != "" || Puesto != null) {
         var urlCompuesta, urlVariables = "", uriPHP;
-        uriPHP = "FiltrarLíneaSerie.php";
-        urlVariables = ("?LíneaSerie=" + LíneaSerie);
+        uriPHP = "FiltrarPuesto.php";
+        urlVariables = ("?Puesto=" + Puesto);
+        urlCompuesta = (uriPHP + urlVariables);
+
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("DivTablaID").innerHTML = this.responseText;
+            }
+        };
+        xmlhttp.open("GET", urlCompuesta, true);
+        console.log("URL: " + urlCompuesta + "\nURL Variables: " + urlVariables);
+        console.log("ModoFiltro: " + ModoFiltro);
+        xmlhttp.send();
+    }
+    else {
+        document.getElementById("DivTablaID").innerHTML = "";
+        return;
+    }
+}
+function FiltroDependencia() {
+    var Dependencia = document.getElementById("CampoFiltroDependencia").value;
+    if (Dependencia != "" || Dependencia != null) {
+        var urlCompuesta, urlVariables = "", uriPHP;
+        uriPHP = "FiltrarDependencia.php";
+        urlVariables = ("?Dependencia=" + Dependencia);
+        urlCompuesta = (uriPHP + urlVariables);
+
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("DivTablaID").innerHTML = this.responseText;
+            }
+        };
+        xmlhttp.open("GET", urlCompuesta, true);
+        console.log("URL: " + urlCompuesta + "\nURL Variables: " + urlVariables);
+        console.log("ModoFiltro: " + ModoFiltro);
+        xmlhttp.send();
+    }
+    else {
+        document.getElementById("DivTablaID").innerHTML = "";
+        return;
+    }
+}
+function FiltroMarca() {
+    var Marca = document.getElementById("CampoFiltroMarca").value;
+    if (Marca != "" || Marca != null) {
+        var urlCompuesta, urlVariables = "", uriPHP;
+        uriPHP = "FiltrarMarca.php";
+        urlVariables = ("?Marca=" + Marca);
         urlCompuesta = (uriPHP + urlVariables);
 
         var xmlhttp = new XMLHttpRequest();
@@ -106,54 +154,6 @@ function FiltroModelo() {
         var urlCompuesta, urlVariables = "", uriPHP;
         uriPHP = "FiltrarModelo.php";
         urlVariables = ("?Modelo=" + Modelo);
-        urlCompuesta = (uriPHP + urlVariables);
-
-        var xmlhttp = new XMLHttpRequest();
-        xmlhttp.onreadystatechange = function () {
-            if (this.readyState == 4 && this.status == 200) {
-                document.getElementById("DivTablaID").innerHTML = this.responseText;
-            }
-        };
-        xmlhttp.open("GET", urlCompuesta, true);
-        console.log("URL: " + urlCompuesta + "\nURL Variables: " + urlVariables);
-        console.log("ModoFiltro: " + ModoFiltro);
-        xmlhttp.send();
-    }
-    else {
-        document.getElementById("DivTablaID").innerHTML = "";
-        return;
-    }
-}
-function FiltroBarras() {
-    var Barras = document.getElementById("CampoFiltroBarras").value;
-    if (Barras != "" || Barras != null) {
-        var urlCompuesta, urlVariables = "", uriPHP;
-        uriPHP = "FiltrarBarras.php";
-        urlVariables = ("?Barras=" + Barras);
-        urlCompuesta = (uriPHP + urlVariables);
-
-        var xmlhttp = new XMLHttpRequest();
-        xmlhttp.onreadystatechange = function () {
-            if (this.readyState == 4 && this.status == 200) {
-                document.getElementById("DivTablaID").innerHTML = this.responseText;
-            }
-        };
-        xmlhttp.open("GET", urlCompuesta, true);
-        console.log("URL: " + urlCompuesta + "\nURL Variables: " + urlVariables);
-        console.log("ModoFiltro: " + ModoFiltro);
-        xmlhttp.send();
-    }
-    else {
-        document.getElementById("DivTablaID").innerHTML = "";
-        return;
-    }
-}
-function FiltroSKU() {
-    var SKU = document.getElementById("CampoFiltroSKU").value;
-    if (SKU != "" || SKU != null) {
-        var urlCompuesta, urlVariables = "", uriPHP;
-        uriPHP = "FiltrarSKU.php";
-        urlVariables = ("?SKU=" + SKU);
         urlCompuesta = (uriPHP + urlVariables);
 
         var xmlhttp = new XMLHttpRequest();

@@ -121,11 +121,11 @@
                     </td>
                     <td></td>
                 </tr>
+            </form>
         </table>
         <!--
         <input class='BotónEstándar' type='submit' value="Filtrar productos" onclick="javascript:FiltrarProductos();">
     -->
-        </form>
 
         <button class="BotónEstándar" onclick="javascript:LimpiarFiltros();">Limpiar filtros</button>
         <br>
