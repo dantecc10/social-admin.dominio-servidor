@@ -45,6 +45,7 @@
                 <th>Dependencia</th>
                 <th>Marca</th>
                 <th>Modelo</th>
+                <th>Estado</th>
             </tr>
             <form>
                 <tr id="InputsFiltros">
@@ -119,6 +120,7 @@
                             ?>
                         </select>
                     </td>
+                    <td></td>
                 </tr>
         </table>
         <!--
@@ -153,6 +155,7 @@
             echo "<th>ECOSYS 3145</th>";
             echo "<th>TASKalfa</th>";
             echo "<th>M5521</th>";
+            echo "<th>Estado</th>";
             echo "</tr>";
             while ($columna = mysqli_fetch_array($resultado)) {
                 echo "<tr>";
@@ -173,6 +176,7 @@
                 echo "<td>" . $columna['ECOSYS 3145'] . "</td>";
                 echo "<td>" . $columna['TASKalfa'] . "</td>";
                 echo "<td>" . $columna['M5521'] . "</td>";
+                echo "<td>" . $columna['Estado'] . "</td>";
                 echo "</tr>";
             }
             ?>
