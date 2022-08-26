@@ -273,6 +273,7 @@
     }
 
     #InsertarResultados th,
+    #InsertarResultados td,
     #TablaFiltros th {
         background-color: #0c38e8;
         font-size: 15px;
