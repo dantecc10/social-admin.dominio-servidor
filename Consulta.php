@@ -41,10 +41,10 @@
             <tr id="EncabezadosFiltros">
                 <th>ID</th>
                 <th>Nombre</th>
-                <th>Línea o serie</th>
+                <th>Puesto</th>
+                <th>Dependencia</th>
+                <th>Marca</th>
                 <th>Modelo</th>
-                <th>Barras</th>
-                <th>SKU</th>
             </tr>
             <form>
                 <tr id="InputsFiltros">
@@ -62,17 +62,49 @@
                             ?>
                         </select>
                     </td>
-                    <td id="BúsquedaLíneaSerie">
-                        <input type="text" name="CapturaLíneaSerie" id="CampoFiltroLíneaSerie" placeholder="Línea o serie" onblur="javascript:FiltroLíneaSerie(ModoFiltro = 'LíneaSerie')" onchange="javascript:FiltroLíneaSerie(ModoFiltro = 'LíneaSerie')">
+                    <td id="BúsquedaPuesto">
+                        <select name="CapturaPuesto" id="CampoFiltroPuesto" onblur="javascript:FiltroPuesto(ModoFiltro = 'ID')" onchange="javascript:FiltroPuesto(ModoFiltro = 'ID')">
+                            <?php
+                            $consulta = "SELECT `Puesto` FROM `equipos administrativos`";
+                            $resultado = mysqli_query($conexión, $consulta) or die("Error en la consulta a la base de datos");
+                            while ($columna = mysqli_fetch_array($resultado)) {
+                                echo ("<option value='" . $columna['Puesto'] . "'>" . $columna['Puesto'] . "</option>");
+                            }
+                            ?>
+                        </select>
+                    </td>
+                    <td id="BúsquedaDependencia">
+                        <select name="CapturaDependencia" id="CampoFiltroDependencia" onblur="javascript:FiltroDependencia(ModoFiltro = 'ID')" onchange="javascript:FiltroDependencia(ModoFiltro = 'ID')">
+                            <?php
+                            $consulta = "SELECT `Dependencia` FROM `equipos administrativos`";
+                            $resultado = mysqli_query($conexión, $consulta) or die("Error en la consulta a la base de datos");
+                            while ($columna = mysqli_fetch_array($resultado)) {
+                                echo ("<option value='" . $columna['Dependencia'] . "'>" . $columna['Dependencia'] . "</option>");
+                            }
+                            ?>
+                        </select>
+                    </td>
+                    <td id="BúsquedaMarca">
+                        <select name="CapturaMarca" id="CampoFiltroMarca" onblur="javascript:FiltroMarca(ModoFiltro = 'ID')" onchange="javascript:FiltroMarca(ModoFiltro = 'ID')">
+                            <?php
+                            $consulta = "SELECT `Marca` FROM `equipos administrativos`";
+                            $resultado = mysqli_query($conexión, $consulta) or die("Error en la consulta a la base de datos");
+                            while ($columna = mysqli_fetch_array($resultado)) {
+                                echo ("<option value='" . $columna['Marca'] . "'>" . $columna['Marca'] . "</option>");
+                            }
+                            ?>
+                        </select>
                     </td>
                     <td id="BúsquedaModelo">
-                        <input type="text" name="CapturaModelo" id="CampoFiltroModelo" placeholder="Modelo del artículo" onblur="javascript:FiltroModelo(ModoFiltro = 'Modelo')" onchange="javascript:FiltroModelo(ModoFiltro = 'Modelo')">
-                    </td>
-                    <td id="BúsquedaBarras">
-                        <input type="text" name="CapturaBarras" id="CampoFiltroBarras" placeholder="Código de barras" onblur="javascript:FiltroBarras(ModoFiltro = 'Barras')" onchange="javascript:FiltroBarras(ModoFiltro = 'Barras')">
-                    </td>
-                    <td id="BúsquedaSKU">
-                        <input type="text" name="CapturaSKU" id="CampoFiltroSKU" placeholder="SKU" onblur="javascript:FiltroSKU(ModoFiltro = 'SKU')" onchange="javascript:FiltroSKU(ModoFiltro = 'SKU')">
+                        <select name="CapturaModelo" id="CampoFiltroModelo" onblur="javascript:FiltroModelo(ModoFiltro = 'ID')" onchange="javascript:FiltroModelo(ModoFiltro = 'ID')">
+                            <?php
+                            $consulta = "SELECT `Modelo` FROM `equipos administrativos`";
+                            $resultado = mysqli_query($conexión, $consulta) or die("Error en la consulta a la base de datos");
+                            while ($columna = mysqli_fetch_array($resultado)) {
+                                echo ("<option value='" . $columna['Modelo'] . "'>" . $columna['Modelo'] . "</option>");
+                            }
+                            ?>
+                        </select>
                     </td>
                 </tr>
         </table>
