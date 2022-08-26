@@ -267,6 +267,11 @@
         color: whitesmoke;
     }
 
+    tr {
+        font-size: 15px;
+        height: 30px;
+    }
+
     #InsertarResultados th,
     #TablaFiltros th {
         background-color: #0c38e8;
@@ -277,10 +282,6 @@
         width: 15%;
     }
 
-    tr {
-        font-size: 15px;
-        height: 30px;
-    }
 
     tr#Fila1 {
         height: 40px;
