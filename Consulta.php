@@ -111,13 +111,12 @@
                     </td>
                     <td id="BúsquedaModelo">
                         <select name="CapturaModelo" id="CampoFiltroModelo" onblur="javascript:FiltroModelo(ModoFiltro = 'ID')" onchange="javascript:FiltroModelo(ModoFiltro = 'ID')">
-                            <?php
-                            $consulta = "SELECT `Modelo` FROM `equipos administrativos`";
-                            $resultado = mysqli_query($conexión, $consulta) or die("Error en la consulta a la base de datos");
-                            while ($columna = mysqli_fetch_array($resultado)) {
-                                echo ("<option value='" . $columna['Modelo'] . "'>" . $columna['Modelo'] . "</option>");
-                            }
-                            ?>
+                            <option value="OptiPlex 380">OptiPlex 380</option>
+                            <option value="OptiPlex 3060">OptiPlex 3060</option>
+                            <option value="Compaq Pro 6300">Compaq Pro 6300</option>
+                            <option value="ProDesk">ProDesk</option>
+                            <option value="Vostro">Vostro</option>
+                            <option value="Veriton 6800">Veriton 6800</option>
                         </select>
                     </td>
                     <td></td>
@@ -178,7 +177,6 @@
                 echo "<td>" . $columna['M5521'] . "</td>";
                 echo "<td>" . $columna['Estado'] . "</td>";
                 echo "</tr>";
-                
             }
             ?>
         </table>
