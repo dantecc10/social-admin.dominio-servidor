@@ -178,6 +178,7 @@
                 echo "<td>" . $columna['M5521'] . "</td>";
                 echo "<td>" . $columna['Estado'] . "</td>";
                 echo "</tr>";
+                
             }
             ?>
         </table>
