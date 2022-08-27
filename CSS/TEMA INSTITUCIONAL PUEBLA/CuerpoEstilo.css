@@ -239,7 +239,7 @@
     select#Lista2:hover,
     select#Lista3:hover,
     select#Lista4:hover {
-        border: 2px double whitesmoke;
+        border: 1px double whitesmoke;
         color: #0c38e8;
         background-color: #07A189;
 
@@ -249,7 +249,7 @@
     #InsertarResultados td {
         background-color: #eeeeee;
         /*PROBLEMA TABLA CSS*/
-        color: whitesmoke;
+        color: #3b3b41;
     }
 
     table#InsertarResultados,
@@ -263,9 +263,9 @@
     #TablaFiltros th,
     #TablaFiltros tr,
     #TablaFiltros td {
-        border: 2px solid #07A189;
+        border: 1px solid #07A189;
         text-align: center;
-        border-radius: 5px;
+        border-radius: 1.5px;
     }
 
     #InsertarResultados th,
