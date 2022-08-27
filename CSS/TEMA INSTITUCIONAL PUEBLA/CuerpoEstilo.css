@@ -369,6 +369,10 @@
         border-radius: 5px;
         color: #041029;
     }
+
+    body {
+        font-family: 'Oxygen', "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
 }
 
 /*Fin de punto de ruptura para pantallas grandes*/
