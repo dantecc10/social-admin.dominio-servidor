@@ -247,7 +247,7 @@
 
     #TablaFiltros td,
     #InsertarResultados td {
-        background-color: #041029;
+        background-color: #eeeeee;
         /*PROBLEMA TABLA CSS*/
         color: whitesmoke;
     }
@@ -270,7 +270,7 @@
 
     #InsertarResultados th,
     #TablaFiltros th {
-        background-color: #0c38e8;
+        background-color: #e7e7e7;
         font-size: 13px;
     }
 
