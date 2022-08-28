@@ -63,10 +63,10 @@ function ConstruirTabla($sql)
     echo "<td>" . $columna['Procesador'] . "</td>";
     echo "<td>" . $columna['Frecuencia'] . "</td>";
     echo "<td>" . $columna['RAM'] . "</td>";
-    echo "<td>" . $columna['Sistema Operativo'] . "</td>";
+    echo "<td>" . $columna['Sistema'] . "</td>";
     echo "<td>" . $columna['Marca'] . "</td>";
     echo "<td>" . $columna['Modelo'] . "</td>";
-    echo "<td>" . $columna['ECOSYS 3145'] . "</td>";
+    echo "<td>" . $columna['ECOSYS'] . "</td>";
     echo "<td>" . $columna['TASKalfa'] . "</td>";
     echo "<td>" . $columna['M5521'] . "</td>";
     echo "<td>" . $columna['Estado'] . "</td>";

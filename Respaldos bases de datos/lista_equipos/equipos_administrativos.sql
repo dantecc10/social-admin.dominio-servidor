@@ -104,6 +104,7 @@ INSERT INTO `equipos administrativos` (`ID`, `Usuario`, `Nombre`, `Puesto`, `Dep
 
 
 
+
 --
 -- Índices para tablas volcadas
 --
