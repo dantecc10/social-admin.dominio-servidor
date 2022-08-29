@@ -20,13 +20,12 @@
     <header id="Encabezado">
         <div id="Contenedor-Encabezado">
             <div id="Contenido-Encabezado">
-                <h1>Inicio</h1> <a href="index.php"> <img id="Logo" src="../IMG/FAVICON.PNG" alt="dante.castelancarpinteyro.club">
+                <h1>SS SUITE</h1> <a href="index.php">
+                    <img id="Logo" src="../IMG/FAVICON.PNG" alt="SS SUITE">
                 </a>
                 <div class="Menú-Desplegable"> <button class="Botón-Desplegar">Menú</button>
                     <div class="Contenido-Desplegable">
-                        <a href="IniciarSesión.php">Iniciar Sesión</a>
-                        <a href="politiza.castelancarpinteyro.club">POLITIZA MX</a>
-                        <a href="AcercaDe.php">Acerca de...</a>
+                        <a href="Consulta.php">Consultar productos</a>
                         <a id="CambiaTema" onclick="javascript:CambiarTema();">Cambiar tema</a>
                     </div>
                 </div>
