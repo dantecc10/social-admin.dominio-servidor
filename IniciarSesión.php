@@ -45,7 +45,7 @@
 
     <form action="" method="POST">
         <?php
-        include "Scripts PHP/Inicio de sesión.php";
+        include "Scripts PHP/Inicio%20de%20sesi%C3%B3n.php";
         ?>
         <label for="userEmail">Correo electrónico:</label><br>
         <input name="Email" type="email" required="" placeholder="Dirección de correo electrónico:*"><br><br>
