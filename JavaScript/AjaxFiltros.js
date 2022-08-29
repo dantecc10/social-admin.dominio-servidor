@@ -11,7 +11,7 @@ function FiltrarProductos() {
         return;
     } else {
         var urlCompuesta, urlVariables = "", uriPHP;
-        uriPHP = "Filtrar.php";
+        uriPHP = "Scripts PHP/Filtrar.php";
         urlVariables = ("?ID=" + ID + "&Marca=" + Marca + "&LíneaSerie=" + LíneaSerie + "&Modelo=" + Modelo + "&Barras=" + Barras + "&SKU=" + SKU);
         urlCompuesta = (uriPHP + urlVariables);
 
@@ -31,7 +31,7 @@ function FiltroID() {
     var ID = document.getElementById("CampoFiltroID").value;
     if (ID != "" || ID != null) {
         var urlCompuesta, urlVariables = "", uriPHP;
-        uriPHP = "FiltrarID.php";
+        uriPHP = "Scripts PHP/FiltrarID.php";
         urlVariables = ("?ID=" + ID);
         urlCompuesta = (uriPHP + urlVariables);
 
@@ -56,7 +56,7 @@ function FiltroNombre() {
     var Nombre = document.getElementById("CampoFiltroNombre").value;
     if (Nombre != "" || Nombre != null || Nombre != "Todas") {
         var urlCompuesta, urlVariables = "", uriPHP;
-        uriPHP = "FiltrarNombre.php";
+        uriPHP = "Scripts PHP/FiltrarNombre.php";
         urlVariables = ("?Nombre=" + Nombre);
         urlCompuesta = (uriPHP + urlVariables);
 
@@ -80,7 +80,7 @@ function FiltroPuesto() {
     var Puesto = document.getElementById("CampoFiltroPuesto").value;
     if (Puesto != "" || Puesto != null) {
         var urlCompuesta, urlVariables = "", uriPHP;
-        uriPHP = "FiltrarPuesto.php";
+        uriPHP = "Scripts PHP/FiltrarPuesto.php";
         urlVariables = ("?Puesto=" + Puesto);
         urlCompuesta = (uriPHP + urlVariables);
 
@@ -104,7 +104,7 @@ function FiltroDependencia() {
     var Dependencia = document.getElementById("CampoFiltroDependencia").value;
     if (Dependencia != "" || Dependencia != null) {
         var urlCompuesta, urlVariables = "", uriPHP;
-        uriPHP = "FiltrarDependencia.php";
+        uriPHP = "Scripts PHP/FiltrarDependencia.php";
         urlVariables = ("?Dependencia=" + Dependencia);
         urlCompuesta = (uriPHP + urlVariables);
 
@@ -128,7 +128,7 @@ function FiltroMarca() {
     var Marca = document.getElementById("CampoFiltroMarca").value;
     if (Marca != "" || Marca != null) {
         var urlCompuesta, urlVariables = "", uriPHP;
-        uriPHP = "FiltrarMarca.php";
+        uriPHP = "Scripts PHP/FiltrarMarca.php";
         urlVariables = ("?Marca=" + Marca);
         urlCompuesta = (uriPHP + urlVariables);
 
@@ -152,7 +152,7 @@ function FiltroModelo() {
     var Modelo = document.getElementById("CampoFiltroModelo").value;
     if (Modelo != "" || Modelo != null) {
         var urlCompuesta, urlVariables = "", uriPHP;
-        uriPHP = "FiltrarModelo.php";
+        uriPHP = "Scripts PHP/FiltrarModelo.php";
         urlVariables = ("?Modelo=" + Modelo);
         urlCompuesta = (uriPHP + urlVariables);
 

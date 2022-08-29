@@ -1,6 +1,6 @@
 <?php
 
-$Marca = strval($_GET['Marca']);
+$Modelo = strval($_GET['Modelo']);
 //  $ModoFiltro = ($_GET['ModoFiltro']);
 $sql;
 /*
@@ -9,13 +9,13 @@ $sql;
 
 // echo ("ID es: " . $ID . "<br>");
 $SQLBase = "SELECT * FROM `equipos administrativos` WHERE ";
-$SQLBase = ($SQLBase . " Marca = '" . $Marca . "'");
+$SQLBase = ($SQLBase . " Modelo = '" . $Modelo . "'");
 $sql = $SQLBase;
 ConstruirTabla($sql);
 
 function ConstruirTabla($sql)
 {
-    require('Conexión.php');
+    require('Scripts PHP/Conexión.php');
     // echo $sql;
     echo ("<table id='InsertarResultados'>");
     $result = mysqli_query($conexión, $sql) or die("Error en la consulta a la base de datos");
