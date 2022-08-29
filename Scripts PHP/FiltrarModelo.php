@@ -15,7 +15,7 @@ ConstruirTabla($sql);
 
 function ConstruirTabla($sql)
 {
-    require('Scripts PHP/Conexión.php');
+  require('Conexión.php');
     // echo $sql;
     echo ("<table id='InsertarResultados'>");
     $result = mysqli_query($conexión, $sql) or die("Error en la consulta a la base de datos");
