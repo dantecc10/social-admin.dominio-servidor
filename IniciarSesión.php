@@ -42,10 +42,10 @@
     </p>
     <form action="Scripts PHP/Inicio de sesión.php" method="POST">
         <label for="userEmail">Correo electrónico:</label><br>
-        <input name="userEmail" type="email" required="" placeholder="Dirección de correo electrónico:*"><br><br>
+        <input name="Email" type="email" required="" placeholder="Dirección de correo electrónico:*"><br><br>
 
         <label for="userPassword">Contraseña:</label><br>
-        <input name="userPassword" type="password" required="" placeholder="Contraseña*"><br><br>
+        <input name="Contraseña" type="password" required="" placeholder="Contraseña*"><br><br>
 
         <input type="submit">
     </form>
