@@ -5,7 +5,6 @@
     <link rel="shortcut icon" href="../IMG/FAVICON TRANSPARENTE.png" type="image/x-icon">
     <link id="EtiquetaCSS" rel="Stylesheet" href="CSS/CSS GLOBAL - TEMA INSTITUCIONAL PUEBLA.css" Type="text/css" MEDIA="screen">
     <link id="Oculta/Muestra" rel="Stylesheet" href="CSS/CSS OCULTAMIENTO.css" Type="text/css" MEDIA="screen">
-    <link id="Oculta/Muestra" rel="Stylesheet" href="CSS/CSS OCULTAMIENTO 0.css" Type="text/css" MEDIA="screen">
     <link rel="stylesheet" href="CSS/Formulario.css" type="text/CSS">
     <meta name="description" content="Dante Castelán Carpinteyro: Web dedicada a publicación de proyectos y código personal.">
     <meta name="author" content="Dante Castelán Carpinteyro">
@@ -22,7 +21,7 @@
         <div id="Contenedor-Encabezado">
             <div id="Contenido-Encabezado">
                 <h1>SS SUITE</h1> <a href="index.php">
-                    <img id="Logo" src="IMG/FAVICON.PNG" alft="SS SUITE">
+                    <img id="Logo" src="../IMG/FAVICON.PNG" alft="SS SUITE">
                 </a>
 
 
