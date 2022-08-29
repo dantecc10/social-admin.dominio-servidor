@@ -39,7 +39,7 @@
     </header>
 
     <div id="DivInicioSesión" class="modal">
-        <form class="modal-content animate" action="/action_page.php" method="post">
+        <form class="modal-content animate" action="" method="post">
             <div class="imgcontainer">
                 <span onclick="document.getElementById('DivInicioSesión').style.display='none'" class="CerrarCuadro" title="Close Modal">×</span>
                 <img src="IMG/img_avatar2.png" alt="Avatar" class="avatar">
@@ -61,7 +61,7 @@
             include "Modelo/ConexiónSeguridad.php";
             include "Controlador/controlador_login.php";
             ?>
-            
+
             <div class="container" style="background-color:#f1f1f1">
                 <button type="button" onclick="document.getElementById('DivInicioSesión').style.display='none'" class="BotónCancelar DecoradoBotón">Cancel</button>
                 <span class="psw">¿Olvidaste tu <a href="#">contraseña</a>?</span>
