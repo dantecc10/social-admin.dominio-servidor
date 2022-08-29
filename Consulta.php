@@ -1,3 +1,9 @@
+<?php
+session_start();
+if (empty($_SESSION['ID'])) {
+    header("Location: index.php");
+}
+?>
 <!DOCTYPE html>
 <html lang="es-MX">
 
@@ -23,7 +29,9 @@
                 </a>
                 <div class="Menú-Desplegable"> <button class="Botón-Desplegar">Menú</button>
                     <div class="Contenido-Desplegable">
+                        <a href="index.php">Inicio</a>
                         <a href="Consulta.php">Consultar productos</a>
+                        <a href="Controlador/controlador_logout.php">Cerrar sesión</a>
                         <a id="CambiaTema" onclick="javascript:CambiarTema();">Cambiar tema</a>
                     </div>
                 </div>
@@ -36,6 +44,7 @@
         <p class="Descripción-Artículo">
             <?php
             require('Scripts PHP/Conexión.php');
+            echo (". Un gusto tenerte por aquí, " . $_SESSION['Nombre'] . ".");
             ?>
         </p>
         <p>Filtros:</p>

@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <script src="../JavaScript/CambiarTema.js"></script>
+    <script src="JavaScript/CambiarTema.js"></script>
     <!--Encabezado (no mover)--> <br>
     <header id="Encabezado">
         <div id="Contenedor-Encabezado">
@@ -52,12 +52,16 @@
                 <label for="contraseña"><b>Contraseña</b></label>
                 <input type="password" placeholder="Contraseña*" name="contraseña" required="">
 
-                <input type="submit" name="InicioSesiónf" value="Iniciar sesión" class="IniciarSesión DecoradoBotón">
+                <input type="submit" name="InicioSesión" value="Iniciar sesión" class="IniciarSesión DecoradoBotón">
                 <label>
                     <input type="checkbox" checked="checked" name="remember">Recordarme
                 </label>
             </div>
-
+            <?php
+            include "Modelo/ConexiónSeguridad.php";
+            include "Controlador/controlador_login.php";
+            ?>
+            
             <div class="container" style="background-color:#f1f1f1">
                 <button type="button" onclick="document.getElementById('DivInicioSesión').style.display='none'" class="BotónCancelar DecoradoBotón">Cancel</button>
                 <span class="psw">¿Olvidaste tu <a href="#">contraseña</a>?</span>
