@@ -10,7 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="IMG/El Mundo del Regalo - LOGO.png">
-    <title>Iniciar sesion</title>
+    <title>Iniciar sesión</title>
 </head>
 
 <body>
@@ -18,7 +18,7 @@
     <header id="Encabezado">
         <div id="Contenedor-Encabezado">
             <div id="Contenido-Encabezado">
-                <h1>El Mundo del Regalo</h1>
+                <h1>Inicio de sesión</h1>
                 <div id="DivLOGO">
                     <a href="index.php">
                         <img id="Logo" src="IMG/El Mundo del Regalo - LOGO.png" alt="El Mundo del Regalo Zacatlán">
