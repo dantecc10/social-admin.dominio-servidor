@@ -40,7 +40,7 @@
     </header>
     <p>Bienvenido, si tiene una cuenta, inicie sesión, de lo contrario, puede consultar el catálogo en el siguiente enlace:
     </p>
-    <form action="Inicio de sesión.php" method="POST">
+    <form action="Scripts PHP/Inicio de sesión.php" method="POST">
         <label for="userEmail">Correo electrónico:</label><br>
         <input name="userEmail" type="email" required="" placeholder="Dirección de correo electrónico:*"><br><br>
 
