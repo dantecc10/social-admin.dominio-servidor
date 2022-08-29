@@ -53,7 +53,7 @@
         <label for="userPassword">Contraseña:</label><br>
         <input name="Contraseña" type="password" required="" placeholder="Contraseña*"><br><br>
 
-        <input type="submit" name="Iniciar Sesión" value="Iniciar Sesión">
+        <input type="submit" name="BInicioSesión" value="Iniciar Sesión">
     </form>
 
 </body>
