@@ -4,7 +4,9 @@
 <head>
     <!--<link rel="shortcut icon" href="" type="image/x-icon">!-->
     <link rel="Stylesheet" href="CSS/CSS GLOBAL - TEMA INSTITUCIONA PUEBLA.css" Type="text/css" MEDIA="screen">
-
+    <link rel="stylesheet" href="CSS/Formulario.css" type="text/CSS">
+    <link rel="stylesheet" href="CSS/CSS OCULTAMIENTO 0.css" type="text/CSS">
+    <link rel="stylesheet" href="CSS/CSS OCULTAMIENTO.css" type="text/CSS">
     <meta name="author" content="Dante Castelán Carpinteyro">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
