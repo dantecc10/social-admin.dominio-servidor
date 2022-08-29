@@ -56,9 +56,6 @@
         <input type="submit" name="Iniciar Sesión" value="Iniciar Sesión">
     </form>
 
-
-
-
 </body>
 <?php
 ?>
