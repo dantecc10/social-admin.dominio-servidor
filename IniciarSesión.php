@@ -3,14 +3,14 @@
 
 <head>
     <!--<link rel="shortcut icon" href="" type="image/x-icon">!-->
-    <link rel="Stylesheet" href="CSS/CSS GLOBAL - TEMA CLARO.css" Type="text/css" MEDIA="screen">
+    <link rel="Stylesheet" href="CSS/CSS GLOBAL - TEMA INSTITUCIONA PUEBLA.css" Type="text/css" MEDIA="screen">
 
     <meta name="author" content="Dante Castelán Carpinteyro">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="IMG/El Mundo del Regalo - LOGO.png">
-    <title>El Mundo del Regalo</title>
+    <title>Iniciar sesion</title>
 </head>
 
 <body>
@@ -40,6 +40,9 @@
     </header>
     <p>Bienvenido, si tiene una cuenta, inicie sesión, de lo contrario, puede consultar el catálogo en el siguiente enlace:
     </p>
+
+
+
     <form action="" method="POST">
         <?php
         include "Scripts PHP/Inicio de sesión.php";
@@ -50,8 +53,12 @@
         <label for="userPassword">Contraseña:</label><br>
         <input name="Contraseña" type="password" required="" placeholder="Contraseña*"><br><br>
 
-        <input type="submit" name="Iniciar Sesión">
+        <input type="submit" name="Iniciar Sesión" value="Iniciar Sesión">
     </form>
+
+
+
+
 </body>
 <?php
 ?>
