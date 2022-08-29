@@ -1,4 +1,4 @@
 <?php
-if (!empty($_POST['Iniciar Sesión'])) { 
-    echo "Botón presionado";
+if (!empty($_POST['Iniciar Sesión'])) {
+    echo "<p>Botón presionado</p>";
 }
