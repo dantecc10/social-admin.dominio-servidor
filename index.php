@@ -2,7 +2,7 @@
 <html lang="es">
 
 <head>
-    <link rel="shortcut icon" href="../IMG/FAVICON TRANSPARENTE.png" type="image/x-icon">
+    <link rel="shortcut icon" href="IMG/SS SUITE-1.png" type="image/x-icon">
     <link id="EtiquetaCSS" rel="Stylesheet" href="CSS/CSS GLOBAL - TEMA INSTITUCIONAL PUEBLA.css" type="text/css" media="screen">
 
     <link rel="stylesheet" href="CSS/Formulario.css" type="text/CSS">
