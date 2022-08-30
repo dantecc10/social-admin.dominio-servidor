@@ -21,7 +21,7 @@
         <div id="Contenedor-Encabezado">
             <div id="Contenido-Encabezado">
                 <h1>SS SUITE</h1> <a href="index.php">
-                    <img id="Logo" src="../IMG/FAVICON.PNG" alft="SS SUITE">
+                    <img id="Logo" src="IMG/SS SUITE-1.png" alft="SS SUITE">
                 </a>
 
 
