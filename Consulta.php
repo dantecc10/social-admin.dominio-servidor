@@ -2,7 +2,7 @@
 session_start();
 if (empty($_SESSION['ID'])) {
     header("Location: index.php");
-} //Hola
+} //Hola Dante
 ?>
 <!DOCTYPE html>
 <html lang="es-MX">
